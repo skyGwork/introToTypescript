@@ -33,26 +33,31 @@ let point: { x: number; y: number } = {
 // Function
 //annotation
 let greeting: (name: string) => string;
+
 greeting = function (name: string) {
   return `Hi ${name}`;
 };
 
 // combined at one function with annotation
-const logNumber: (i: number) => void = (i: number) => {
+const logNumber = (i: number): void => {
   console.log(i); // for void
 };
-const logNumber1: (i: number) => string = (i: number) => {
+
+// ------
+const logNumber1 = (i: number): string => {
   return 'hello all'; // for string
 };
-const logNumber2: (i: number) => boolean = (i: number) => {
+
+// ------
+const logNumber2 = (i: number): boolean => {
   return true; // boolean
 };
 
-let greetingAll: (name: string, age: number) => string = (name: string) => {
+// ----
+let greetingAll = (name: string, age: number): string => {
   return `Hi ${name}`;
 };
 
 // Classes
 class Car {}
 let car: Car = new Car();
-
