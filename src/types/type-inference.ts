@@ -1,4 +1,4 @@
-// TypeScript infers types when you "don’t explicitly" annotate them.
+//! TypeScript infers types when you "don’t explicitly" annotate them.
 let testId = 5;
 let speedTest = 'fast';
 let marritalSts = true;
@@ -6,27 +6,27 @@ let marritalSts = true;
 let nothin = null;
 let nothingDev = undefined;
 
-// built in objects
+//! built in objects
 let DateNow = new Date();
 
-// Array
+//! Array
 let colorsOne = ['red', 'green', 'blue'];
 let myNumbersOne = [1, 2, 3];
 let truthsOne = [true, true, false];
 
-// Object literal
+//! Object literal
 let personOne: {
   name: 'John';
   age: 20;
 };
 
-// another object
+//! another object
 let pointOne = {
   x: 10,
   y: 20,
 };
 
-// Function
+//! Function
 greeting = function (name) {
   return `Hi ${name}`;
 };
@@ -45,5 +45,16 @@ let greetingAllOne = (name: string) => {
   return `Hi ${name}`;
 };
 
-// Classes
-let CarOne = new Car();
+// ? objects
+let secondPerson = {
+  name: 'sel',
+  org: 'www.sel.com',
+  hobbies: ['sports', 'coocking', 'reaserch'],
+
+  greet: () => {
+    alert('hello from sel...');
+  },
+  deets: function () {
+    return `Name:${this.name}\n@:${this.org}`;
+  },
+};
