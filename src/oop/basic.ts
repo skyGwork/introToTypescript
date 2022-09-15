@@ -32,6 +32,7 @@ let selPerson = {
   name: 'sel',
   org: 'www.sel.com',
   hobbies: ['sports', 'coocking', 'reaserch'],
+  
   greet: () => {
     alert('hello from sel...');
   },
