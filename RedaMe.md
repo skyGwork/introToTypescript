@@ -1,3 +1,4 @@
+```json
 {
   "compilerOptions": {
     "lib": ["DOM", "ES6"],
@@ -6,3 +7,4 @@
     "outDir": "dist"
   }
 }
+```
